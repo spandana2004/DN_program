@@ -1,12 +1,12 @@
-import singleton.logger;
+package singleton;
 
-public class Main {
+public class testlogger {
     public static void main(String[] args) {
         logger logger1 = logger.getInstance();
-        logger1.log("First message");
+        logger1.log("Message 1");
 
         logger logger2 = logger.getInstance();
-        logger2.log("Second message");
+        logger2.log("Message 2");
 
         System.out.println("Same instance? " + (logger1 == logger2));
     }
